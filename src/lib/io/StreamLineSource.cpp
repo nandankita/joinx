@@ -6,8 +6,9 @@ StreamLineSource::StreamLineSource(std::istream& in)
 }
 
 bool StreamLineSource::getline(std::string& line) {
-    return std::getline(_in, line);
-}
+        std::getline(_in, line);
+        return true;
+ }
 
 char StreamLineSource::peek() {
     return _in.peek();
